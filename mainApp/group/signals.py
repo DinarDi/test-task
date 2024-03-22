@@ -23,7 +23,7 @@ def create_group(sender, instance, created, *args, **kwargs):
 
     groups = Group.objects.filter(product=product).annotate(
         students_count=Count('students')
-    )
+    ).select_related('product').prefetch_related('students')
 
     refresher = Refresher(product=product, groups=list(groups))
     if created:

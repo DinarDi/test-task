@@ -35,6 +35,50 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-debug-toolbar"
+version = "4.3.0"
+description = "A configurable set of panels that display various debug information about the current request/response."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "django_debug_toolbar-4.3.0-py3-none-any.whl", hash = "sha256:e09b7dcb8417b743234dfc57c95a7c1d1d87a88844abd13b4c5387f807b31bf6"},
+    {file = "django_debug_toolbar-4.3.0.tar.gz", hash = "sha256:0b0dddee5ea29b9cb678593bc0d7a6d76b21d7799cb68e091a2148341a80f3c4"},
+]
+
+[package.dependencies]
+django = ">=3.2.4"
+sqlparse = ">=0.2"
+
+[[package]]
+name = "django-debug-toolbar-force"
+version = "0.2"
+description = "Force debugging of partial- or non-HTML views in django-debug-toolbar."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-debug-toolbar-force-0.2.tar.gz", hash = "sha256:2ab28dca4a5cd0261dfe555d709935f2dabbbb09b4be5ac0ce82103a8da0a735"},
+    {file = "django_debug_toolbar_force-0.2-py2.py3-none-any.whl", hash = "sha256:3f580982051079dc5e85e13590d9f13d70bf012be693a81b167183cf9a3f6eec"},
+]
+
+[package.dependencies]
+django-nine = ">=0.2.3"
+
+[[package]]
+name = "django-nine"
+version = "0.2.7"
+description = "Version checking library."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-nine-0.2.7.tar.gz", hash = "sha256:304e0f83cea5a35359375fc919d00f9917b655c1d388244cbfc7363f59489177"},
+    {file = "django_nine-0.2.7-py2.py3-none-any.whl", hash = "sha256:4d93208ca5bb4a63bf65cf098a82ee469127b04ebde698d72fe12d258b73c291"},
+]
+
+[package.dependencies]
+Django = "*"
+packaging = "*"
+
+[[package]]
 name = "djangorestframework"
 version = "3.15.0"
 description = "Web APIs for Django, made easy."
@@ -47,6 +91,17 @@ files = [
 
 [package.dependencies]
 django = ">=3.0"
+
+[[package]]
+name = "packaging"
+version = "24.0"
+description = "Core utilities for Python packages"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "packaging-24.0-py3-none-any.whl", hash = "sha256:2ddfb553fdf02fb784c234c7ba6ccc288296ceabec964ad2eae3777778130bc5"},
+    {file = "packaging-24.0.tar.gz", hash = "sha256:eb82c5e3e56209074766e6885bb04b8c38a0c015d0a30036ebe7ece34c9989e9"},
+]
 
 [[package]]
 name = "sqlparse"
@@ -78,4 +133,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "bfe1ea3dcec0ee1230a4fe1269e7fc7b059dc8d732657d98e0d116dbdec94049"
+content-hash = "60c4f72d99bbdecfdc1c12ad14039583dc7c718595ba9b4f7f0a79bcb69058e3"
